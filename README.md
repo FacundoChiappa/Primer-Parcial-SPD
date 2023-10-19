@@ -45,4 +45,4 @@ de luz ambiental. Su funcion era controlar la intensidad de movimiento del motor
 
 
 ## :robot: Link al proyecto 3
-- [proyecto](https://www.tinkercad.com/things/iyHLEff0hUF)
+- [proyecto](https://www.tinkercad.com/things/72ArPFh2wpp)

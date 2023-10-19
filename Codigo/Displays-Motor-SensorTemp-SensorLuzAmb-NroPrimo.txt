@@ -1,4 +1,29 @@
 
+/*
+----------------------------CONSIGNA PARCIAL PARTE 1---------------------------------------------
+1. Considerando el último número de tu número de documento (DNI o documento de
+identidad), agrega un componente adicional que afecte el funcionamiento del proyecto.
+Describe en detalle qué hace este nuevo componente y cómo se integra en el proyecto.
+
+-Si tu número de documento termina en (0-3) deberás implementar a tu proyecto la
+fotoresistencia
+-Si tu número de documento termina en (4-6) deberás implementar a tu proyecto la
+Fotodiodo.
+-Si tu número de documento termina en (7-9) deberás implementar a tu proyecto el
+sensor de luz ambiental.
+-------------------------------------------------------------------------------------------------
+*/
+
+/*
+   Proyecto: Contador con dos displays, motor CC, sensor de temperatura, sensor de luz ambiental y numeros primos
+   Autor: Facundo Chiappa
+   Fecha de Creación: 09/10/2023
+   Descripción: Este código Arduino controla un contador con un display de 7 segmentos.
+                Permite aumentar, disminuir y resetear el contador.
+                A su vez, el sensor de temperatura y el de luz ambiental se complementan para controlar la velocidad
+                del motor CC.
+*/
+
 // Las declaraciones `#define` al principio del código se utilizan para definir constantes. En este caso, definen números de pin para varios componentes y botones utilizados en el código. Por ejemplo, `#define G 2` significa que la constante `G` se define como el valor 2. Esto permite una legibilidad y comprensión más sencilla del código, ya que se puede hacer referencia a los números de pin por sus nombres en lugar de sus valores numéricos. a lo largo del código.
 #define G 2
 #define F 3
