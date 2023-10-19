@@ -30,6 +30,7 @@ Investigar en la semana y agregar uno de los siguientes componentes
                 los numeros primos y un sensor de temperatura que ayuda a manejar el motor.
 */
 
+// Estas declaraciones `#define` se utilizan para definir constantes en el código. Asignan un nombre a un valor específico, lo que hace que el código sea más legible y fácil de mantener.
 #define A 10
 #define B 11
 #define C 5
@@ -54,6 +55,7 @@ Investigar en la semana y agregar uno de los siguientes componentes
 #define APAGADOS 0
 #define TIEMPO_DISPAY_ON 10
 
+// Estas son declaraciones de variables en el código. Se utilizan para almacenar y manipular diferentes valores a lo largo del programa.
 int contadorDecena = 0;
 int contadorUnidad = 0;
 
@@ -71,6 +73,7 @@ int opcion;
 int temperatura = 0;
 int lectura = 0;
 
+// La función `void setup()` es una función especial en Arduino que se llama una vez cuando se inicia el programa. Se utiliza para inicializar los ajustes y configuraciones de la placa Arduino y cualquier componente conectado.
 void setup()
 {
   pinMode(A, OUTPUT);
@@ -98,6 +101,7 @@ void setup()
   Serial.println("2 - Apagar Motor");
 }
 
+// El código anterior implementa un sistema de control para un motor basado en lecturas de temperatura. Lee la temperatura de un sensor, asigna la lectura analógica a un rango de temperatura y luego verifica la entrada del usuario desde el monitor en serie. Si el usuario ingresa '1', el motor se enciende si la temperatura está dentro del rango operativo (0°C a 30°C). Si el usuario ingresa '2', el motor se apaga. Si el usuario ingresa cualquier otro valor, se imprime un mensaje de error.
 void loop()
 {
   //Serial.println(temperatura);
@@ -255,6 +259,7 @@ void loop()
   }
 }
 
+// El código anterior está implementando una función llamada "imprimirDisplay" que toma dos parámetros enteros: "contadorDecena" y "contadorUnidad". Esta función se encarga de imprimir los valores de estos dos contadores en un display.
 void imprimirDisplay (int contadorDecena, int contadorUnidad)
 {
   prendeDisplay(APAGADOS);
@@ -287,6 +292,7 @@ void prendeDisplay (int display)
   }
 }
 
+// El código anterior define una función llamada "imprimirDigito" que toma un parámetro entero llamado "digito". Dentro de la función, hay una instrucción de cambio que verifica el valor de "digito" y establece los pines digitales correspondientes (A, B, C, D, E, F, G) en ALTO o BAJO. Es probable que este código sea parte de un programa más grande que controla una pantalla de siete segmentos para mostrar un dígito específico según el valor de entrada.
 void imprimirDigito (int digito)
 {
   digitalWrite(A, LOW);
@@ -389,6 +395,7 @@ void imprimirDigito (int digito)
   }
 }
 
+// El código anterior es una función llamada "esPrimo" que toma un número entero como entrada y devuelve un valor booleano. Comprueba si el número dado es un número primo o no. Primero maneja algunos casos especiales donde el número es 0, 1 o 4 y devuelve false en estos casos. Luego, itera desde 2 hasta el número dado: 1 y verifica si el número es divisible por alguno de estos números. Si es divisible por cualquier número, devuelve falso. Si no es divisible por ningún número, devuelve verdadero,
 bool esPrimo(int numero) {
   // Casos especiales
   if (numero == 0 || numero == 1 || numero == 4) return false;
@@ -399,6 +406,7 @@ bool esPrimo(int numero) {
   return true;
 }
 
+// El código anterior es una función llamada "numeroPrimoDisplay" que toma un parámetro entero llamado "numeroPrimo". Se utiliza para separar los dígitos de decenas y unidades del número ingresado y almacenarlos en dos variables separadas llamadas "contadorDecena" y "contadorUnidad".
 void numeroPrimoDisplay(int numeroPrimo)
 {
   if (numeroPrimo < 10)

@@ -1,6 +1,6 @@
 
 /*
-----------------------------CONSIGNA PARCIAL PARTE 1---------------------------------------------
+----------------------------CONSIGNA PARCIAL PARTE 3---------------------------------------------
 1. Considerando el último número de tu número de documento (DNI o documento de
 identidad), agrega un componente adicional que afecte el funcionamiento del proyecto.
 Describe en detalle qué hace este nuevo componente y cómo se integra en el proyecto.
