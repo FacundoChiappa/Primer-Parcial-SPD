@@ -23,6 +23,9 @@
 ## Proyecto: Contador binario con multiplexacion, switch de numeros primos, motor, sensor de temperatura y sensor de luz ambiental.
 ![Tinkercad](./img/Imagen-Circuito-3.png)
 
+## Proyecto: Contador binario con multiplexacion, switch de numeros impares, motor, sensor de temperatura y sensor de luz ambiental.
+![Tinkercad](./img/Imagen-Circuito-4.png)
+
 ## Descripción
 Realizamos un contador que va de 0 a 99 a traves de dos Displays de 7 segmentos 
 utilizando el metodo de multiplexacion para controlar cada display independientemente
@@ -46,3 +49,6 @@ de luz ambiental. Su funcion era controlar la intensidad de movimiento del motor
 
 ## :robot: Link al proyecto 3
 - [proyecto](https://www.tinkercad.com/things/72ArPFh2wpp)
+
+## :robot: Link al proyecto 4
+- [proyecto](https://www.tinkercad.com/things/2AvXat1B9bp)
